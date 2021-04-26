@@ -6,3 +6,7 @@ console.log(cognome);
 
 var fav_color = prompt("Adesso vorrei sapere qual'è il tuo colore preferito");
 console.log(fav_color);
+
+var password = nome + cognome + fav_color + "21";
+
+document.getElementById("password").innerHTML= password;

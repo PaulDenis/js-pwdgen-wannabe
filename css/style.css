@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    /* position: relative; */
+    height: 100vh;
+    padding-top: 10px;
+    background-image: linear-gradient(to bottom right, black, blue);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 300px;
+    /* width: 50%; */
+    margin: 50px auto;
+}
+
+#password {
+    position: absolute;
+    /* top: 50px; */
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.hidden {
+    position: absolute;
+    /* top: 50px; */
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.container:hover {
+    cursor: pointer;
+
+}
+
+.container:hover .hidden{
+    visibility: hidden;
+}
+
+.container:hover #password {
+    display: inline-block;
+}
+
+span {
+    font-size: 24px;
+    color: red;
+    text-transform: uppercase;
+}

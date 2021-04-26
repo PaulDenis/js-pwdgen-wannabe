@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>La tua password personalizzata è:</h1>
-    <h2 id="password"></h2>
-
-    <script type="text/javascript" src="js/script.js"></script>
+    <main>
+        <h1>La tua password personalizzata è:</h1>
+        <div class="container">
+            <h2 class="hidden">***********************</h2>
+            <h2 id="password"></h2>
+        </div>
+        
+        <p class="attenzione"><span>attenzione!!!</span> Ricordati che le password sono key-sensitive, pertanto se nella password le lettere sono maiuscole, <span>dovrai inserirle maiuscole</span></p>
+    
+        <script type="text/javascript" src="js/script.js"></script>
+    </main>
 </body>
 </html>
